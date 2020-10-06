@@ -2,13 +2,13 @@ var primes = [];
 var vector = Array()
 
 for(var i=1; i<1000;i++){
-    vector.push(true)
+    vector.push(1)
 }
 
 for(var i = 2; i<= 1000;i++){
     if(vector[i]){
         for(m=i * i; m < 1000; m += i){
-            vector[m] = false;
+            vector[m] = 0;
         }
     }
 }
@@ -23,4 +23,3 @@ for(var i = 2; i<1000; i++){
 for (i=0; i< primes.length;i++){
     console.log(primes[i]);
 }
-
